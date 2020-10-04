@@ -15,6 +15,10 @@
 		E283ADFE252959BF00BE9D14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E283ADFC252959BF00BE9D14 /* LaunchScreen.storyboard */; };
 		E283AE09252959BF00BE9D14 /* tableViewOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E283AE08252959BF00BE9D14 /* tableViewOneTests.swift */; };
 		E283AE14252959BF00BE9D14 /* tableViewOneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E283AE13252959BF00BE9D14 /* tableViewOneUITests.swift */; };
+		E283AE2525295FE900BE9D14 /* pessoas.swift in Sources */ = {isa = PBXBuildFile; fileRef = E283AE2425295FE900BE9D14 /* pessoas.swift */; };
+		E283AE2A2529669D00BE9D14 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E283AE292529669D00BE9D14 /* CustomCell.swift */; };
+		E283AE30252A05DC00BE9D14 /* PessoaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E283AE2F252A05DC00BE9D14 /* PessoaViewController.swift */; };
+		E283AE35252A05F600BE9D14 /* Pessoa.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E283AE34252A05F600BE9D14 /* Pessoa.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		E283AE0F252959BF00BE9D14 /* tableViewOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tableViewOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E283AE13252959BF00BE9D14 /* tableViewOneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewOneUITests.swift; sourceTree = "<group>"; };
 		E283AE15252959BF00BE9D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E283AE2425295FE900BE9D14 /* pessoas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pessoas.swift; sourceTree = "<group>"; };
+		E283AE292529669D00BE9D14 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		E283AE2F252A05DC00BE9D14 /* PessoaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PessoaViewController.swift; sourceTree = "<group>"; };
+		E283AE34252A05F600BE9D14 /* Pessoa.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pessoa.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +110,9 @@
 				E283ADF1252959BE00BE9D14 /* AppDelegate.swift */,
 				E283ADF3252959BE00BE9D14 /* SceneDelegate.swift */,
 				E283ADF5252959BE00BE9D14 /* ViewController.swift */,
+				E283AE292529669D00BE9D14 /* CustomCell.swift */,
+				E283AE2E252A056C00BE9D14 /* MyViewPessoa */,
+				E283AE2425295FE900BE9D14 /* pessoas.swift */,
 				E283ADF7252959BE00BE9D14 /* Main.storyboard */,
 				E283ADFA252959BF00BE9D14 /* Assets.xcassets */,
 				E283ADFC252959BF00BE9D14 /* LaunchScreen.storyboard */,
@@ -126,6 +137,15 @@
 				E283AE15252959BF00BE9D14 /* Info.plist */,
 			);
 			path = tableViewOneUITests;
+			sourceTree = "<group>";
+		};
+		E283AE2E252A056C00BE9D14 /* MyViewPessoa */ = {
+			isa = PBXGroup;
+			children = (
+				E283AE2F252A05DC00BE9D14 /* PessoaViewController.swift */,
+				E283AE34252A05F600BE9D14 /* Pessoa.storyboard */,
+			);
+			path = MyViewPessoa;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +254,7 @@
 				E283ADFE252959BF00BE9D14 /* LaunchScreen.storyboard in Resources */,
 				E283ADFB252959BF00BE9D14 /* Assets.xcassets in Resources */,
 				E283ADF9252959BE00BE9D14 /* Main.storyboard in Resources */,
+				E283AE35252A05F600BE9D14 /* Pessoa.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +281,10 @@
 			files = (
 				E283ADF6252959BE00BE9D14 /* ViewController.swift in Sources */,
 				E283ADF2252959BE00BE9D14 /* AppDelegate.swift in Sources */,
+				E283AE2A2529669D00BE9D14 /* CustomCell.swift in Sources */,
+				E283AE2525295FE900BE9D14 /* pessoas.swift in Sources */,
 				E283ADF4252959BE00BE9D14 /* SceneDelegate.swift in Sources */,
+				E283AE30252A05DC00BE9D14 /* PessoaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
