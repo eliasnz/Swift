@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H0o-Mv-ymZ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="exercicio03" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XTt-ex-7Zd">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tU6-qV-BTj">
+                                    <size key="itemSize" width="110" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CarViewCell" id="cAG-XV-JrD" customClass="CarViewCell" customModule="exercicio03" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="zXe-sL-LQa">
+                                            <rect key="frame" x="0.0" y="0.0" width="110" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="15c-rw-H4N">
+                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="108"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghb-25-GDD">
+                                                    <rect key="frame" x="0.0" y="107" width="110" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="110" id="in0-bd-z0m"/>
+                                                        <constraint firstAttribute="height" constant="21" id="ty7-b3-IHD"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="15c-rw-H4N" firstAttribute="leading" secondItem="zXe-sL-LQa" secondAttribute="leading" id="6Id-yE-oVg"/>
+                                                <constraint firstAttribute="bottom" secondItem="ghb-25-GDD" secondAttribute="bottom" id="6ng-nK-kZt"/>
+                                                <constraint firstItem="ghb-25-GDD" firstAttribute="top" secondItem="zXe-sL-LQa" secondAttribute="top" constant="107" id="BbO-c3-4xl"/>
+                                                <constraint firstItem="15c-rw-H4N" firstAttribute="top" secondItem="zXe-sL-LQa" secondAttribute="top" id="Cbq-K3-BA2"/>
+                                                <constraint firstItem="ghb-25-GDD" firstAttribute="leading" secondItem="zXe-sL-LQa" secondAttribute="leading" id="DcO-aC-ipM"/>
+                                                <constraint firstAttribute="trailing" secondItem="ghb-25-GDD" secondAttribute="trailing" id="KGk-f0-W9C"/>
+                                                <constraint firstAttribute="trailing" secondItem="15c-rw-H4N" secondAttribute="trailing" id="X3h-7O-Std"/>
+                                                <constraint firstAttribute="bottom" secondItem="15c-rw-H4N" secondAttribute="bottom" constant="20" id="pb1-8G-3o8"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="110" height="128"/>
+                                        <connections>
+                                            <outlet property="imageCar" destination="15c-rw-H4N" id="yrF-CL-XbF"/>
+                                            <outlet property="labelNameCar" destination="ghb-25-GDD" id="KRu-eu-uo8"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XTt-ex-7Zd" secondAttribute="trailing" id="a8I-bg-c9t"/>
+                            <constraint firstItem="XTt-ex-7Zd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fD7-zE-oaY"/>
+                            <constraint firstItem="XTt-ex-7Zd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="m8H-Ma-Trm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XTt-ex-7Zd" secondAttribute="bottom" id="rl0-Q6-s0c"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8Fv-4y-P8L"/>
+                    <connections>
+                        <outlet property="carCollectionView" destination="XTt-ex-7Zd" id="qX7-ZN-GAc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050.7246376811595" y="103.79464285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FTs-Kj-eqp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H0o-Mv-ymZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="m2x-m2-ioJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="R7t-sg-3gu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n36-X6-2Ra" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
